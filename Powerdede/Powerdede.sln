@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Powerdede", "Powerdede\Powerdede.csproj", "{DE150B67-92B1-4FC9-B68F-0BEF6E712E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Powerdede.Tests", "Powerdede.Tests\Powerdede.Tests.csproj", "{52C37068-C61D-4189-A85F-9BE6D887DAE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE150B67-92B1-4FC9-B68F-0BEF6E712E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE150B67-92B1-4FC9-B68F-0BEF6E712E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE150B67-92B1-4FC9-B68F-0BEF6E712E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE150B67-92B1-4FC9-B68F-0BEF6E712E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C37068-C61D-4189-A85F-9BE6D887DAE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C37068-C61D-4189-A85F-9BE6D887DAE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C37068-C61D-4189-A85F-9BE6D887DAE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C37068-C61D-4189-A85F-9BE6D887DAE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD74AA23-B854-43A0-A945-9739A54F030D}
+	EndGlobalSection
+EndGlobal
