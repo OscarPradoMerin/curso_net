@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=tcp:socialonceapi20170420101319dbserver.database.windows.net,1433;Initial Catalog=Powerdede_db;User Id=oscarpm@socialonceapi20170420101319dbserver;Password=Pa$$w0rd" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ordenador\ 2\\Desktop\\Powerdede\\Powerdede\\Powerdede\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

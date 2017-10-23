@@ -1,8 +1,20 @@
-﻿
+﻿@model Powerdede.Models.SongGenre
 @{
     ViewBag.Title = "Create";
 }
 
 <h2>Create</h2>
 
-<p>ID insertado: @ViewBag.InsertedId</p>
+@*<p>ID insertado: @ViewBag.InsertedId</p>*@
+
+@using (Html.BeginForm("Create", "SongGenres", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.LabelFor(s => s.Name)
+    @Html.TextBoxFor(s => s.Name)
+
+    <input type="submit" value="Create" />
+}
+
+    

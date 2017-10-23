@@ -13,7 +13,8 @@ namespace Powerdede.Models {
         public string Link { get; set; }
         [DisplayName("Duración")]
         public int Duration { get; set; }
-        [DisplayFormat(DataFormatString = "dd/MM/yyyy HH:mm")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+        [DisplayName("Fecha Subida")]
         public DateTime UploadTime { get; set; }
         public int AuthorId { get; set; }
         [ForeignKey("AuthorId")]
@@ -21,9 +22,9 @@ namespace Powerdede.Models {
         public int SongGenreId { get; set; }
         [ForeignKey("SongGenreId")]
         public SongGenre SongGenre { get; set; }
-        public string ApplicationUserId { get; set; }
-        [ForeignKey("ApplicationUserId")]
-        public ApplicationUser ApplicationUser { get; set; }
+        public string UserId { get; set; }
+        [ForeignKey("UserId")]
+        public ApplicationUser User { get; set; }
         [DisplayName("Activo")]
         public bool Active { get; set; }
     }

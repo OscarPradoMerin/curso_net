@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Powerdede.Models {
@@ -12,14 +13,15 @@ namespace Powerdede.Models {
         [DisplayName("Duración")]
         public int Duration { get; set; }
         [DisplayName("Fecha subida")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime UploadTime { get; set; }
         public string Link { get; set; }
         public int VideoGenreId { get; set; }
         [ForeignKey("VideoGenreId")]
         public VideoGenre VideoGenre { get; set; }
-        public string ApplicationUserId { get; set; }
-        [ForeignKey("ApplicationUserId")]
-        public ApplicationUser ApplicationUser { get; set; }
+        public string UserId { get; set; }
+        [ForeignKey("UserId")]
+        public ApplicationUser User { get; set; }
         [DisplayName("Activo")]
         public bool Active { get; set; }
     }

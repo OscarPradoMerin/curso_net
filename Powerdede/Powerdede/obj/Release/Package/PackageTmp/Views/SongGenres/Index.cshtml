@@ -1,0 +1,11 @@
+﻿@model List<Powerdede.Models.SongGenre>
+@{
+    ViewBag.Title = "Géneros musicales";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@foreach (var item in Model) {
+    <p>ID: @item.Id</p>
+    <p>Nombre: @item.Name</p>
+}

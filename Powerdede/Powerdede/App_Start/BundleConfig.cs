@@ -25,7 +25,11 @@ namespace Powerdede
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/font-awesome.css",
                       "~/Content/site.css"));
+
+            // Enable minification of css and js files
+            BundleTable.EnableOptimizations = true;
         }
     }
 }

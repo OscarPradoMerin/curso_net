@@ -30,10 +30,10 @@ namespace Powerdede.Models
             return new ApplicationDbContext();
         }
 
-        public DbSet<Video> Videos { get; set; }
-        public DbSet<Song> Songs { get; set; }
-        public DbSet<VideoGenre> VideoGenres { get; set; }
-        public DbSet<SongGenre> SongGenres { get; set; }
-        public DbSet<Author> Authors { get; set; }
+        public IDbSet<Video> Videos { get; set; }
+        public IDbSet<Song> Songs { get; set; }
+        public IDbSet<VideoGenre> VideoGenres { get; set; }
+        public IDbSet<SongGenre> SongGenres { get; set; }
+        public IDbSet<Author> Authors { get; set; }
     }
 }
