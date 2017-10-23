@@ -1,8 +1,12 @@
-﻿using System.Data.Entity;
+﻿
+
+using System.Data.Entity;
+using System.Runtime.Remoting.Contexts;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Powerdede.Migrations;
 
 namespace Powerdede.Models
 {
@@ -29,6 +33,11 @@ namespace Powerdede.Models
         {
             return new ApplicationDbContext();
         }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ApplicationDbContext, Configuration>());
+        }
+
 
         public IDbSet<Video> Videos { get; set; }
         public IDbSet<Song> Songs { get; set; }
